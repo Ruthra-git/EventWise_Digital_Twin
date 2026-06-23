@@ -1,0 +1,144 @@
+============================================================
+EVENTWISE AI DATA VALIDATION REPORT
+============================================================
+
+
+Rows : 8173
+Columns : 46
+
+
+Columns Present:
+ - id
+ - event_type
+ - latitude
+ - longitude
+ - endlatitude
+ - endlongitude
+ - address
+ - end_address
+ - event_cause
+ - requires_road_closure
+ - start_datetime
+ - end_datetime
+ - status
+ - authenticated
+ - modified_datetime
+ - map_file
+ - direction
+ - description
+ - veh_type
+ - veh_no
+ - corridor
+ - priority
+ - cargo_material
+ - reason_breakdown
+ - age_of_truck
+ - created_date
+ - route_path
+ - client_id
+ - created_by_id
+ - last_modified_by_id
+ - assigned_to_police_id
+ - citizen_accident_id
+ - comment
+ - police_station
+ - meta_data
+ - kgid
+ - resolved_at_address
+ - resolved_at_latitude
+ - resolved_at_longitude
+ - closed_by_id
+ - closed_datetime
+ - resolved_by_id
+ - resolved_datetime
+ - gba_identifier
+ - zone
+ - junction
+
+
+Duplicate Rows
+----------------------
+Duplicate count : 0
+
+
+Missing Values
+----------------------
+id : 0
+event_type : 0
+latitude : 0
+longitude : 0
+endlatitude : 169
+endlongitude : 169
+address : 3
+end_address : 7486
+event_cause : 0
+requires_road_closure : 0
+start_datetime : 0
+end_datetime : 7683
+status : 0
+authenticated : 0
+modified_datetime : 0
+map_file : 8173
+direction : 8130
+description : 1360
+veh_type : 3286
+veh_no : 3287
+corridor : 20
+priority : 2
+cargo_material : 7897
+reason_breakdown : 7897
+age_of_truck : 7897
+created_date : 0
+route_path : 8036
+client_id : 0
+created_by_id : 2
+last_modified_by_id : 3
+assigned_to_police_id : 8045
+citizen_accident_id : 8045
+comment : 8173
+police_station : 0
+meta_data : 8173
+kgid : 259
+resolved_at_address : 8099
+resolved_at_latitude : 8099
+resolved_at_longitude : 8099
+closed_by_id : 5032
+closed_datetime : 5032
+resolved_by_id : 8099
+resolved_datetime : 8099
+gba_identifier : 4729
+zone : 4729
+junction : 5663
+
+
+Latitude Validation
+----------------------
+Invalid Latitude Count : 0
+
+
+Longitude Validation
+----------------------
+Invalid Longitude Count : 0
+
+
+Coordinate Completeness
+----------------------
+Rows missing coordinates : 0
+
+
+Numerical Summary
+----------------------
+                id event_type     latitude    longitude  endlatitude  endlongitude                                                                                 address                                                                                   end_address        event_cause requires_road_closure                 start_datetime            end_datetime  status authenticated              modified_datetime  map_file   direction       description  veh_type       veh_no      corridor priority cargo_material  reason_breakdown  age_of_truck            created_date route_path    client_id created_by_id last_modified_by_id assigned_to_police_id citizen_accident_id  comment police_station  meta_data        kgid                                                                                                       resolved_at_address  resolved_at_latitude  resolved_at_longitude closed_by_id                closed_datetime resolved_by_id              resolved_datetime                 gba_identifier            zone      junction
+count         8173       8173  8173.000000  8173.000000  8004.000000   8004.000000                                                                                    8170                                                                                           687               8173                  8173                           8173                     490    8173          8173                           8173       0.0          43              6813      4887         4886          8153     8171            276               276    276.000000                    8173        137  8173.000000          8171                8170                   128                 128      0.0           8173        0.0        7914                                                                                                                        74             74.000000              74.000000         3141                           3141             74                             74                           3444            3444          2510
+unique        8173          2          NaN          NaN          NaN           NaN                                                                                    3089                                                                                           561                 17                     2                           8060                     459       3             2                           8173       NaN           8              5542        10         4212            22        2            138               193           NaN                    8172         83          NaN          1898                 304                    62                  77      NaN             54        NaN        1853                                                                                                                        58                   NaN                    NaN         1225                           3141             42                             74                              5              10           294
+top     FKID000000  unplanned          NaN          NaN          NaN           NaN  Outer Ring Road, Karthik Nagar, Marathahalli, Bengaluru, Karnataka. Pin-560037 (India)  Outer Ring Road, CQAE Staff Quarters, Yeshwanthpur, Bengaluru, Karnataka. Pin-560022 (India)  vehicle_breakdown                 False  2024-01-16 23:18:15.118206+00  2024-03-18 03:05:46+00  closed           yes  2024-03-07 19:35:47.871698+00       NaN  south_west  Starting problem  bmtc_bus  FKN00GL0784  Non-corridor     High          Goods  Starting problem           NaN  2023-06-29 04:05:46+00         []          NaN    FKUSR00105          FKUSR00001            FKUSR01441          FKUSR01442      NaN      Yelahanka        NaN  FKKG000099  Yeshwanthpura TTMC Bus Stand Road, Salarpuria Satva Luxuria, Malleshwaram West, Bengaluru, Karnataka. Pin-560055 (India)                   NaN                    NaN   FKUSR00105  2024-01-30 04:56:03.281509+00     FKUSR01665  2024-01-30 04:17:46.828355+00  Bengaluru Central Corporation  Central Zone 2  MekhriCircle
+freq             1       7706          NaN          NaN          NaN           NaN                                                                                      88                                                                                             6               4896                  7497                             52                       9    7095          7166                              1       NaN          12                80      1466            7          3124     5030             23                22           NaN                       2         51          NaN           104                7091                    52                  52      NaN            377        NaN         104                                                                                                                         8                   NaN                    NaN           54                              1              8                              1                            892             623            64
+mean           NaN        NaN    12.987076    77.596034     1.128050      6.678011                                                                                     NaN                                                                                           NaN                NaN                   NaN                            NaN                     NaN     NaN           NaN                            NaN       NaN         NaN               NaN       NaN          NaN           NaN      NaN            NaN               NaN    235.518116                     NaN        NaN     1.009788           NaN                 NaN                   NaN                 NaN      NaN            NaN        NaN         NaN                                                                                                                       NaN             13.002599              77.569049          NaN                            NaN            NaN                            NaN                            NaN             NaN           NaN
+std            NaN        NaN     0.060109     0.061193     3.736845     21.761316                                                                                     NaN                                                                                           NaN                NaN                   NaN                            NaN                     NaN     NaN           NaN                            NaN       NaN         NaN               NaN       NaN          NaN           NaN      NaN            NaN               NaN    634.059816                     NaN        NaN     0.098457           NaN                 NaN                   NaN                 NaN      NaN            NaN        NaN         NaN                                                                                                                       NaN              0.091377               0.057246          NaN                            NaN            NaN                            NaN                            NaN             NaN           NaN
+min            NaN        NaN    12.801041    77.308731     0.000000      0.000000                                                                                     NaN                                                                                           NaN                NaN                   NaN                            NaN                     NaN     NaN           NaN                            NaN       NaN         NaN               NaN       NaN          NaN           NaN      NaN            NaN               NaN      0.000000                     NaN        NaN     1.000000           NaN                 NaN                   NaN                 NaN      NaN            NaN        NaN         NaN                                                                                                                       NaN             12.841568              77.390820          NaN                            NaN            NaN                            NaN                            NaN             NaN           NaN
+25%            NaN        NaN    12.951635    77.556747     0.000000      0.000000                                                                                     NaN                                                                                           NaN                NaN                   NaN                            NaN                     NaN     NaN           NaN                            NaN       NaN         NaN               NaN       NaN          NaN           NaN      NaN            NaN               NaN      5.000000                     NaN        NaN     1.000000           NaN                 NaN                   NaN                 NaN      NaN            NaN        NaN         NaN                                                                                                                       NaN             12.947656              77.543782          NaN                            NaN            NaN                            NaN                            NaN             NaN           NaN
+50%            NaN        NaN    12.982847    77.589460     0.000000      0.000000                                                                                     NaN                                                                                           NaN                NaN                   NaN                            NaN                     NaN     NaN           NaN                            NaN       NaN         NaN               NaN       NaN          NaN           NaN      NaN            NaN               NaN     10.000000                     NaN        NaN     1.000000           NaN                 NaN                   NaN                 NaN      NaN            NaN        NaN         NaN                                                                                                                       NaN             12.983715              77.556135          NaN                            NaN            NaN                            NaN                            NaN             NaN           NaN
+75%            NaN        NaN    13.026867    77.625853     0.000000      0.000000                                                                                     NaN                                                                                           NaN                NaN                   NaN                            NaN                     NaN     NaN           NaN                            NaN       NaN         NaN               NaN       NaN          NaN           NaN      NaN            NaN               NaN     15.000000                     NaN        NaN     1.000000           NaN                 NaN                   NaN                 NaN      NaN            NaN        NaN         NaN                                                                                                                       NaN             13.019590              77.589899          NaN                            NaN            NaN                            NaN                            NaN             NaN           NaN
+max            NaN        NaN    13.267510    77.769403    59.860133     80.720691                                                                                     NaN                                                                                           NaN                NaN                   NaN                            NaN                     NaN     NaN           NaN                            NaN       NaN         NaN               NaN       NaN          NaN           NaN      NaN            NaN               NaN   2026.000000                     NaN        NaN     2.000000           NaN                 NaN                   NaN                 NaN      NaN            NaN        NaN         NaN                                                                                                                       NaN             13.257297              77.712662          NaN                            NaN            NaN                            NaN                            NaN             NaN           NaN
+
+

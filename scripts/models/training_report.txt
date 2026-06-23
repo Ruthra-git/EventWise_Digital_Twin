@@ -1,0 +1,85 @@
+======================================================================
+TRAFFICTWIN TRAINING REPORT
+======================================================================
+
+Generated : 2026-06-17 23:15:42
+
+----------------------------------------------------------------------
+DATASET SUMMARY
+----------------------------------------------------------------------
+Total Samples        : 8057
+Training Samples     : 6445
+Testing Samples      : 1612
+Total Features       : 26
+
+----------------------------------------------------------------------
+TARGET DISTRIBUTION
+----------------------------------------------------------------------
+Severity 1 : 731
+Severity 2 : 1295
+Severity 3 : 2006
+Severity 4 : 3539
+Severity 5 : 486
+
+----------------------------------------------------------------------
+CROSS VALIDATION RESULTS
+----------------------------------------------------------------------
+LightGBM        Accuracy=0.9994 MacroF1=0.9996 WeightedF1=0.9994
+XGBoost         Accuracy=0.9991 MacroF1=0.9993 WeightedF1=0.9991
+Random Forest   Accuracy=0.9943 MacroF1=0.9929 WeightedF1=0.9943
+
+----------------------------------------------------------------------
+SELECTED MODEL
+----------------------------------------------------------------------
+Model Name      : LightGBM
+Selection Basis : Highest Mean Macro F1
+Accuracy        : 0.9994
+Macro F1        : 0.9996
+Weighted F1     : 0.9994
+
+----------------------------------------------------------------------
+TOP FEATURES
+----------------------------------------------------------------------
+cause_code
+historical_frequency
+event_duration
+cluster_risk_score
+road_closure
+road_closure_ratio
+dist_from_center
+priority_score
+police_frequency
+location_frequency
+hotspot_density
+minutes_since_midnight
+night_ratio
+avg_cluster_duration
+peak_hour_ratio
+
+----------------------------------------------------------------------
+GENERATED ARTIFACTS
+----------------------------------------------------------------------
+best_model.pkl
+lightgbm_model.pkl
+random_forest_model.pkl
+xgboost_model.pkl
+feature_columns.pkl
+xgb_label_encoder.pkl
+artifact_manifest.json
+model_comparison.csv
+feature_importance_summary.csv
+training_report.txt
+
+----------------------------------------------------------------------
+DEPLOYMENT NOTES
+----------------------------------------------------------------------
+• Selected model should be loaded from best_model.pkl
+• Input features must match feature_columns.pkl exactly
+• XGBoost predictions require xgb_label_encoder.pkl
+• Feature preprocessing must be identical to training
+• Model validated using 5-fold stratified cross-validation
+• LightGBM selected as final deployment model
+
+======================================================================
+END OF REPORT
+======================================================================
